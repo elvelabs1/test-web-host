@@ -1,0 +1,302 @@
+body{
+    background-color: #f1f1f1;
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+}
+
+#hal2{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#hal1{
+    align-items: center;
+    justify-content: center;
+    background-image: url("backgroundhal1.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#info{
+    width: 60%;
+    text-align: center;
+    font-size: small;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2px 8px;
+    margin-bottom: 12px;
+}
+
+.judul{
+    background: #2F4350;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#disclaimer li{
+    font-style: italic;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    list-style: none;
+    white-space: nowrap;
+    animation: ticker 24s infinite linear;
+}
+
+#disclaimerText{
+    color: red;
+    background-color: white;
+    padding: 4px;
+    font-weight: 600;
+}
+
+@keyframes ticker {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-1313px);
+    }
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.header .links{
+    margin-top: 16px;
+    text-align: right;
+    flex: 1 1 auto;
+}
+
+.opsi{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.links a{
+    color:white;
+    padding: 2px;
+  font-size: 12px;
+  font-family: Tahoma, sans-serif;
+  margin-right: 12px;
+}
+
+
+.header h2{
+    color: white;
+  font-size: 24px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  margin-left: 12px;
+  margin-bottom: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+.menu{
+    text-align: center;
+  font-style: italic;
+  font-size: medium;
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+}
+
+input[type=button], input[type=text]{
+    color: black;
+    background-color: rgb(168, 171, 192, 0.6);
+}
+
+input{
+    height: 30px;
+    width: 200px;
+    border-radius: 16px;
+    border: 1px solid black;
+    padding-left: 12px;
+}
+
+.input{
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #flexContainer{
+    display: none;
+} */
+
+#searchMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+#searchMenu button{
+    background-color: lightgrey;
+    border: 1px solid darkgrey;
+    text-align: left;
+    padding: 4px;
+    width: 180px;
+    max-width: 180px;
+}
+
+#searchMenu button:hover{
+    background-color: orange;
+}
+
+#saran2{
+    display: none;
+}
+
+#mapelTeknik{
+    display: none;
+}
+
+#box{ 
+    display: flex;
+    flex-direction: column;
+}
+
+#output{
+    display: none;
+}
+
+#headerOutput{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.prospek{
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+    max-height: 200px;
+    overflow: scroll;
+    font-family: Tahoma, sans-serif;
+    font-size: small;
+}
+
+.paket{
+    background-color: #FCFFE7;
+    margin-bottom: 16px;
+    padding: 4px 16px;
+    border-radius: 16px;
+    border: 1px solid rgb(47, 69, 83);
+}
+
+#A, #B, #C, #D {
+    display:none;
+}
+
+.navigasi{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list{
+    display: none;
+  font-family: Tahoma, sans-serif;
+    /* padding: 16px; */
+}
+
+ul{
+    font-size: 13px;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+
+h5{
+    flex: 1 1 auto;
+    margin:4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.add{
+    border:none;
+    background: none;
+}
+
+#pesan{
+    display:none;
+    font-size: small;
+    text-align: center;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+#output h3{
+    display:inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#saran{
+    display: none;
+}
+
+p{
+  font-size: 14px;
+}
+
+.paket p{
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-weight: 4px;
+  font-family: Tahoma, sans-serif;
+  font-size: small;
+}
+
+h4{
+    font-size: medium;
+  text-align: center;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#saranSemua{
+    display: none;
+}
+
+#A, #D, #G, #J{
+    background-color: rgb(168, 171, 192, 0.6);
+}
+
+#B, #E, #H, #K{
+    background-color: rgb(135, 147, 196, 0.6);
+}
+
+#C, #F, #I{
+    background-color: rgb(102, 120, 183, 0.6);
+}
